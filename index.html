@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- tittle -->
+  <title>TinDog</title>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/images/timdog_logo.png">
+
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+  <!-- link of bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!--external css  -->
+  <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+
+
+
+  <!-- link of bootstrap javscript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+
+  <!-- link to import logo -->
+  <script src="https://kit.fontawesome.com/a3c1a185e1.js" crossorigin="anonymous"></script>
+
+
+  <style>
+    /* element selectors */
+body{
+    margin: 0;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+}
+
+h3{
+    font-weight: bold;
+}
+
+h2{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+p{
+    color: grey;
+}
+
+
+/********************* title section *****************/
+/* container fluid */
+.container-fluid{
+    padding: 3% 5%;
+}
+
+/* nav bar */
+.navbar{
+    padding: 0 0 4.5;
+}
+
+.navbar-brand{
+    font-family: 'ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+    text-align: left;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: 'montserrat-light';
+}
+
+.title-h1{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: left;
+}
+
+.download-button{
+    margin: 5% 3% 5% 0%;
+
+}
+
+.title-image{
+    width: 18rem;
+    transform: rotate(25deg);
+    right: 170px;
+    position: absolute;
+    z-index: 1;
+}
+/********************* title section ends **************/
+
+/********************* features section *****************/
+#features {
+    padding: 7% 15% 7%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+}
+
+.feature-box{
+    padding: 5%;
+}
+
+/* feature icon  */
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color: #ff4c68;
+}
+/********************* features section ends *************/
+
+/********************** testimonial section *************/
+#testimonials{
+    color: white;
+    background-color: #ef8172;
+}
+
+.testimonial-text{
+    font-family: 'Fredericka the Great';
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+/********************** testimonial section ends ************/
+
+
+/********************** press section ***********************/
+#press{
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+/********************** press section ends *******************/
+
+
+
+/********************** pricing section *******************/
+#pricing{
+    padding: 100px 15%;
+
+}
+
+.pricing-col{
+    padding: 3% 2%;
+}
+
+.price-text{
+    font-family: 'serif';    
+    font-size: 3rem;
+    line-height: 1.5;
+}
+/********************** pricing section ends ****************/
+
+/********************** cta section *************************/
+#cta{
+    background-color: #ff4c68; 
+    color: #fff;
+    padding: 7% 15%;
+    font-weight: bold;
+}
+.cta-heading{
+    font-family: montserrat-black;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+/********************** cta section ends *********************/
+
+
+/********************** footer section ***********************/
+#footer{
+    padding: 7% 15%;
+}
+.social-icon{
+    margin: 20px 10px;
+}
+.ft-logo{
+    height: 100px;
+    width: 500px;
+}
+/********************** footer section ends *******************/
+
+
+/*********************** media querry ************************/
+@media (max-width: 1024px){
+    .title-h1 {
+        text-align: center;
+    }
+
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
+
+}
+/*********************** media querry ends ********************/
+
+
+
+  </style>
+
+
+
+</head>
+
+
+<body>
+  <!-- ********************************** title section ***********************************-->
+  <section id="title" style="background-color: #ff4c68;">
+
+    <!-- container-fluid -->
+    <div class="container-fluid">
+
+      <!-- nav bar -->
+      <nav class="navbar    navbar-expand-lg     navbar-dark  ">
+        
+        <!--brand logo -->
+        <a class="navbar-brand" href="">tindog</a>
+        
+        <!-- toggler button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- nav bar content -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav  ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cta">Download</a></li>
+          </ul>
+        </div>
+      
+      </nav>
+
+      <div class="row">
+        <!-- there are total 12 component in one grid of web page -->
+        <div class="col-lg-6 col-md-12 ">
+          <h1 class="title-h1">Meet new and interesting dogs nearby.</h1>
+          
+          <!-- download buttons -->
+          <button type="button" class="btn btn-dark btn-lg  download-button"><i class="fa-brands fa-apple"></i>
+            Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg  download-button"><i
+              class="fa-brands fa-google-play"></i> Download</button>
+        </div>
+
+        <!-- tittle-image   iphone -->
+        <div class="col-lg-6">
+          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      
+      </div>
+    
+    </div>
+  </section>
+  <!-- ********************************** title section ends ***********************************-->
+
+
+  <!-- ************************************ Features section ***********************************-->
+  <section id="features">
+    <div class="row">
+
+      <!-- features icons  -->
+      <div class="feature-box col-lg-4">
+        <i class="fa-solid fa-circle-check fa-4x  icon"></i>
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="fa-solid fa-bullseye fa-4x icon"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="fa-sharp fa-solid fa-heart fa-4x icon"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+  </section>
+  <!-- ************************************ Features section  ends ***********************************-->
+
+
+  <!-- ********************************** Testimonials section ***************************************-->
+  <section id="testimonials">
+
+    <!-- carousel -->
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- carosel slide no 1 -->
+        <div class="carousel-item active" data-bs-interval="5000">
+          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on
+            TinDog. ...Woof.</h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <!-- carosel slide no 2 -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of
+            their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+     
+      </div>
+
+      <!-- carousel previous button -->
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <!-- carousel next button -->
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
+    </div>
+  </section>
+  <!-- ********************************** Testimonials section ends ***************************************-->
+
+
+  <!-- ********************************** Press section ************************************************** -->
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+  </section>
+  <!-- ********************************** Press section ends ********************************************** -->
+
+
+  <!-- ************************************** Pricing section ****************************************-->
+  <section id="pricing">
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <div class="row">
+      
+      <!-- pricing card no 1 -->
+      <div class="pricing-col  col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-lg w-100 btn-outline-dark">Sign Up</button>
+          </div>
+          <!-- <div class="card-footer">
+            card-footer
+          </div> -->
+        </div>
+      </div>
+
+      <!-- pricing card no 2 -->
+      <div class="pricing-col col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-lg w-100 btn-dark">Sign Up</button>
+          </div>
+          <!-- <div class="card-footer">
+            card-footer
+          </div> -->
+        </div>
+      </div>
+
+      <!-- pricing card no 3 -->
+      <div class="pricing-col col-lg-4 col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <button type="button" class="btn btn-lg w-100 btn-dark">Sign Up</button>
+          </div>
+          <!-- <div class="card-footer">
+            card-footer
+          </div> -->
+        </div>
+      </div>
+    
+    </div>
+  </section>
+  <!-- ************************************** Pricing section ends ****************************************-->
+
+
+  <!-- *********************************** Call to Action section ****************************************-->
+  <section id="cta">
+    <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+    <!-- download buttons -->
+    <button type="button" class="btn btn-dark btn-lg  download-button"><i class="fa-brands fa-apple"></i>
+      Download</button>
+    <button type="button" class="btn btn-light btn-lg  download-button"><i class="fa-brands fa-google-play"></i>
+      Download</button>
+  </section>
+  <!-- *********************************** Call to Action section ****************************************-->
+
+
+  <!-- *********************************** Footer ************************** -->
+  <footer id="footer">
+    <!-- footer logo -->
+    <i class="social-icon fa-2x fa-brands fa-square-instagram"></i>
+    <i class="social-icon fa-2x fa-brands fa-facebook "></i>
+    <i class="social-icon fa-2x fa-brands fa-linkedin-in"></i>
+    <i class="social-icon fa-2x fa-solid fa-envelope"></i>
+
+    <p>© Copyright TinDog</p>
+  </footer>
+  <!-- *********************************** Footer ends ************************** -->
+
+</body>
+</html>
